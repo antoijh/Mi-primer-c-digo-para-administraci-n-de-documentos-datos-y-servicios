@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import { error } from "console";
+import { test } from "./backend/controlers/alumnos.controllers.js";
 
 dotenv.config();//acceder la configuracion del .env
 
@@ -23,5 +23,6 @@ app.listen(4000, ()=>{
     console.log("se escucha el servidor")
 })//verificando funcion del servidor
 
+test();
 
 
